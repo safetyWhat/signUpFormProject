@@ -7,23 +7,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background"> <!--left side of page-->
-        <div class="logo"> 
-            <img src="/stuff/odin-linedLogo.png" alt="The Odin Project Logo">
+    <div class="content">
+        <div class="background"> <!--left side of page-->
+            <div class="logo"> 
+                <img class="odinLogo" src="stuff/odin-linedLogo.png" alt="The Odin Project Logo">
+                <h1 class="odin">ODIN</h1>
+            </div>
+        </div>
+        <div class="right"> <!--right side of page-->
+            <div class="dummy-text left">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <p class="remote-text">You <em>know</em> you want to.</p>
+            </div>
+            <form action="" method="get" class="signupForm">
+                <div class="form left">
+                    <p class="form-title">Let's do this!</p>
+                    <div class="input">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" required/>
+                    </div>
+
+                    <div class="input">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName"/>
+                    </div>
+
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required/>
+                    </div>
+
+                    <div class="input">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone"/>
+                    </div>
+
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required/>
+                    </div>
+
+                    <div class="input">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" required/>
+                    </div>
+                </div>
+                <div class="left button">
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>
+            <div class="log-in left">
+                <p>Already have an account?</p><a href="#">Log in</a>
+            </div>
         </div>
     </div>
-    <div class="formSide"> <!--right side of page-->
-        <p>
-            This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
-            Sign up <em>now</em> to get started.
-        </p>
-        <p>
-            You <em>know</em> you want to.
-        </p>
-
-
-
-    </div>
-    
 </body>
 </html>
